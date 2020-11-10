@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/layout_top_bar" />
+
+    <com.estmob.android.sendanywhere.sdk.ui.example.TextFont
+        android:id="@+id/tv_top_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/style_common_text"
+        android:layout_below="@+id/topbar"
+        android:text="Make sure your friend is in receive mode"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <com.estmob.android.sendanywhere.sdk.ui.example.ui.view.RadarScanView
+        android:id="@+id/radarView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_top_tip"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+    <ListView
+        android:id="@+id/lv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radarView"
+        android:layout_above="@+id/btn_scan_qr"
+        android:divider="@null"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/btn_scanqrcode" />
+</RelativeLayout>

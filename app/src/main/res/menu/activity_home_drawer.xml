@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_chng_folder"
+            android:icon="@drawable/ic_changepath"
+            android:title="Change Default Folder Path" />
+        <item
+            android:id="@+id/nav_share_his"
+            android:icon="@drawable/ic_sharehistory"
+            android:title="Share History" />
+        <item
+            android:id="@+id/nav_invite_frnd"
+            android:icon="@drawable/ic_invitrfriends"
+            android:title="Invite Friends" />
+        <item
+            android:id="@+id/nav_app_lang"
+            android:icon="@drawable/ic_applanguage"
+            android:title="App Language" />
+
+    </group>
+
+    <group >
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_privacypolicy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_aboutus"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_rate_now"
+            android:icon="@drawable/ic_rateus"
+            android:title="Rate Now" />
+
+    </group>
+
+</menu>

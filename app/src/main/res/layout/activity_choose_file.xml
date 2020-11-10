@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/layout_search_bar" />
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/topbar">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            app:tabMode="fixed"
+            android:layout_marginStart="@dimen/dp_6"
+            android:layout_marginEnd="@dimen/dp_6"
+            app:tabTextColor="@android:color/darker_gray"
+            android:background="@drawable/tab_layout_background"
+            app:tabBackground="@drawable/tab_layout_selector"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorHeight="0dp"
+            android:layout_marginBottom="6dp"
+            app:tabRippleColor="@null"
+            app:tabTextAppearance="@style/TabLayoutTextFont"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/tab"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line"
+        android:layout_above="@+id/line1"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/bottombar"/>
+
+    <include
+        android:id="@+id/bottombar"
+        layout="@layout/layout_bottom_bar" />
+
+</RelativeLayout>

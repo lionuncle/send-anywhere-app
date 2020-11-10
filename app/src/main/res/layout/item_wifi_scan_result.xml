@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp"
+        android:src="@drawable/img_redprofile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_device"
+        android:orientation="vertical">
+
+        <com.estmob.android.sendanywhere.sdk.ui.example.TextFont
+            android:id="@+id/tv_name"
+            style="@style/style_common_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:textColor="@color/white" />
+
+        <com.estmob.android.sendanywhere.sdk.ui.example.TextFont
+            android:id="@+id/tv_mac"
+            style="@style/style_common_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="@string/str_mac"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/iv_device"
+        android:layout_toRightOf="@+id/iv_device"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/iv_ok_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/ic_checkbox"
+        android:visibility="gone" />
+</RelativeLayout>

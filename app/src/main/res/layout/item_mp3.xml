@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_shortcut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_audio" />
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_ok_tick"
+        android:layout_toRightOf="@+id/iv_shortcut"
+        android:orientation="vertical">
+
+        <com.estmob.android.sendanywhere.sdk.ui.example.TextFont
+            android:id="@+id/tv_name"
+            style="@style/style_common_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp" />
+
+        <com.estmob.android.sendanywhere.sdk.ui.example.TextFont
+            android:id="@+id/tv_size"
+            style="@style/style_common_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="@string/str_size"
+            android:textSize="12dp"
+            android:textColor="@color/darker_gray" />
+    </LinearLayout>
+
+ <!--   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/iv_shortcut"
+        android:layout_toRightOf="@+id/iv_shortcut"
+        android:background="@android:color/darker_gray" />-->
+
+    <ImageView
+        android:id="@+id/iv_ok_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_uncheckbox"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="6dp"
+        android:visibility="visible" />
+</RelativeLayout>
